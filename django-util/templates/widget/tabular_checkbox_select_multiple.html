@@ -1,0 +1,60 @@
+{% load tuple_tool %}
+
+<table id="to_be_defined_table">
+	<thead>
+		<tr>
+			<th style="text-align:center"><input type="button" value="Rst" class="uncheckall" style="margin:0"/></th>
+			{% for column_key, column_label in columns %}
+			<th>{{column_label}}</th>
+			{% endfor %}
+		</tr
+	</thead>
+
+	<tbody>
+		{% for row_key, row_label  in rows %}
+		<tr >
+			<td class="row_selector">{{row_label}}</td>
+			{% for column_key, column_label in columns %}
+			<td>
+				{% iftupleinlist choices row_key column_key %}
+					<input name="{{name}}" type="checkbox" value="{{tuple_value}}" {% if tuple_value in values  %} checked="checked" {% endif %} style="margin:0" id="{{name}}_{{forloop.parentloop.counter}}_{{forloop.counter}}" />
+				{% endiftupleinlist %}
+
+			</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</tbody>
+
+</table>
+
+<style type="text/css">
+
+.allchecked td{
+	background-color:#CCDDDD;
+}
+
+</style>
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		
+		$('#to_be_defined_table .row_selector').click(function(){
+			var parent = $(this).parent();
+			parent.find(":checkbox").attr('checked', !parent.hasClass( "allchecked" ));
+			parent.toggleClass( "allchecked" )
+			//alert($(this).parent().class);
+		});
+		
+		
+		$('#to_be_defined_table .uncheckall').click(function(){
+			var parent = $('#to_be_defined_table');
+			parent.find(":checkbox").attr('checked',  false);
+			parent.find(".allchecked").removeClass('allchecked');
+			//parent.toggleClass( "allchecked" )
+			//alert($(this).parent().class);
+		});
+	 });
+
+</script>
