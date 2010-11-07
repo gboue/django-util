@@ -4,9 +4,9 @@
 from setuptools import setup, find_packages
 import os,sys
 
-from django-util  import VERSION
+from django_util  import VERSION
 
-setup(name='django-util',
+setup(name='django_util',
       version=".".join(map(str, VERSION)),
       description="Usefull tools for a django project",
       long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
