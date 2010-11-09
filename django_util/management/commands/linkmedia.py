@@ -34,7 +34,7 @@ class Command(NoArgsCommand):
 			
 				if os.path.isdir(sub_media_dir):
 					print "%s exist" % (sub_media_dir)
-				else
+				else:
 					print "%s will be used" % (media_dir)					
 			
 		
