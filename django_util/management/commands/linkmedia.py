@@ -6,7 +6,6 @@ import sys
 
 from django.conf import settings
 from django.core.management.base import NoArgsCommand
-from django import settings
 from django.utils._os import safe_join
 from django.utils.importlib import import_module
 import shutil
