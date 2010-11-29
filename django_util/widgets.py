@@ -25,10 +25,10 @@ class ForeignKeySearchInput(forms.HiddenInput):
             'all': ('css/jquery.autocomplete.css',)
         }
         js = (
-            'js/jquery/jquery-1.3.2.js',
-            'js/jquery/jquery.bgiframe.min.js',
-            'js/jquery/jquery.ajaxQueue.js',
-            'js/jquery/jquery.autocomplete.js'
+            'main/js/jquery/jquery-1.3.2.js',
+            'main/js/jquery/jquery.bgiframe.min.js',
+            'main/js/jquery/jquery.ajaxQueue.js',
+            'main/js/jquery/jquery.autocomplete.js'
         )
 
     def label_for_value(self, value):
@@ -108,11 +108,11 @@ class AjaxCheckboxSelectMultiple(forms.CheckboxSelectMultiple):
             'all': ('css/jquery.autocomplete.css',)
         }
         js = (
-            'js/jquery/jquery-1.3.2.js',
-            'js/jquery/jquery.bgiframe.min.js',
-            'js/jquery/jquery.ajaxQueue.js',
-            'js/jquery/jquery.autocomplete.js',
-			'js/jquery/jquery.form.js'
+            'main/js/jquery/jquery-1.3.2.js',
+            'main/js/jquery/jquery.bgiframe.min.js',
+            'main/js/jquery/jquery.ajaxQueue.js',
+            'main/js/jquery/jquery.autocomplete.js',
+			'main/js/jquery/jquery.form.js'
         )
 
 #    def label_for_value(self, value):
@@ -165,7 +165,7 @@ class TabularCheckboxSelectMultiple(forms.CheckboxSelectMultiple):
             'all': ('',)
         }
         js = (
-            'js/jquery/jquery-1.3.2.js',
+            'main/js/jquery/jquery-1.3.2.js',
         )
 
 
@@ -197,14 +197,14 @@ class AjaxTabularCheckboxSelectMultiple(TabularCheckboxSelectMultiple):
     """
     class Media:
         css = {
-            'all': ('css/jquery.autocomplete.css',)
+            'all': ('main/css/jquery.autocomplete.css',)
         }
         js = (
-            'js/jquery/jquery-1.3.2.js',
-            'js/jquery/jquery.bgiframe.min.js',
-            'js/jquery/jquery.ajaxQueue.js',
-            'js/jquery/jquery.autocomplete.js',
-			'js/jquery/jquery.form.js'
+            'main/js/jquery/jquery-1.3.2.js',
+            'main/js/jquery/jquery.bgiframe.min.js',
+            'main/js/jquery/jquery.ajaxQueue.js',
+            'main/js/jquery/jquery.autocomplete.js',
+			'main/js/jquery/jquery.form.js'
         )
 
 
@@ -286,11 +286,11 @@ class AjaxSearchInput(forms.TextInput):
             'all': ()
         }
         js = (
-            'js/jquery/jquery-1.3.2.js',
-            'js/jquery/jquery.bgiframe.min.js',
-            'js/jquery/jquery.ajaxQueue.js',
-            'js/jquery/jquery.autocomplete.js',
-			'js/jquery/jquery.form.js'
+            'main/js/jquery/jquery-1.3.2.js',
+            'main/js/jquery/jquery.bgiframe.min.js',
+            'main/js/jquery/jquery.ajaxQueue.js',
+            'main/js/jquery/jquery.autocomplete.js',
+			'main/js/jquery/jquery.form.js'
         )
 
     def render(self, name, value, attrs=None):
@@ -320,13 +320,13 @@ class AjaxSearchInput(forms.TextInput):
 class CalendarWeekInput(forms.TextInput):
     class Media:
         css = {
-            'all': ('css/smoothness/jquery-ui-1.8.5.custom.css',)
+            'all': ('main/css/smoothness/jquery-ui-1.8.5.custom.css',)
         }
         js = (
-            'js/jquery/jquery-1.3.2.js',
-            'js/jquery/jquery.ui.core.js',
-            'js/jquery/jquery.ui.widget.js',
-            'js/jquery/jquery.ui.datepicker.js',
+            'main/js/jquery/jquery-1.3.2.js',
+            'main/js/jquery/jquery.ui.core.js',
+            'main/js/jquery/jquery.ui.widget.js',
+            'main/js/jquery/jquery.ui.datepicker.js',
         )
 
     def render(self, name, value, attrs=None):
