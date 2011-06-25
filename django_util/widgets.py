@@ -22,7 +22,7 @@ class ForeignKeySearchInput(forms.HiddenInput):
     """
     class Media:
         css = {
-            'all': ('css/jquery.autocomplete.css',)
+            'all': ('main/css/jquery.autocomplete.css',)
         }
         js = (
             'main/js/jquery/jquery-1.3.2.js',
