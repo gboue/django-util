@@ -39,6 +39,10 @@ class ForeignKeySearchAdmin(admin.ModelAdmin):
 		Searches in the fields of the given related model and returns the 
 		result as a simple string to be used by the jQuery Autocomplete plugin
 		"""
+		
+		#import pdb
+		#pdb.set_trace()
+		
 		query = request.GET.get('q', None)
 		app_label = request.GET.get('app_label', None)
 		model_name = request.GET.get('model_name', None)

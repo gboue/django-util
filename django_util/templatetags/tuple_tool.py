@@ -11,7 +11,14 @@ def tuple_inlist(x,y,thelist):
     
     return (x,y) in thelist
 
-#register.filter(tuple_inlist)
+#def dict_value(key,thedict):
+#    """
+#    Indicate whether the tuple (x,y) is in the list
+#    """#
+#
+#    return thedict[key]
+#
+#register.tag(dict_value)
 
 def do_upper(parser, token):
     nodelist = parser.parse(('endupper',))

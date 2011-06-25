@@ -32,8 +32,10 @@ class Command(NoArgsCommand):
 				sub_media_dir = os.path.join(media_dir, mod.__name__)
 			
 				if os.path.isdir(sub_media_dir):
-					print "%s exist" % (sub_media_dir)
+					
+					print "%s will be used" % (sub_media_dir)
 				else:
+					
 					print "%s will be used" % (media_dir)					
 			
 		
